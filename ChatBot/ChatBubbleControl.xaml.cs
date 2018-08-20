@@ -23,10 +23,6 @@ namespace ChatBot
     /// </summary>
     public partial class ChatBubbleControl : UserControl
     {
-        //public ChatBubbleControl(ChatDiscussion bubble)
-        //{
-        //    InitializeComponent();
-        //}
         public ChatBubbleControl()
         {
             InitializeComponent();

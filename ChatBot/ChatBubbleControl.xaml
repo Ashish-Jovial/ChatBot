@@ -6,15 +6,6 @@
              xmlns:local="clr-namespace:ChatBot.Converter"
              xmlns:vm="clr-namespace:ChatBot.ViewModel"
              mc:Ignorable="d">
-    <!--<UserControl.DataContext>-->
-        <!--<vm:ChatDiscussionViewModel></vm:ChatDiscussionViewModel>-->
-        <!--ObjectDataProvider ObjectType="vm:ChatDiscussionViewModel" xmlns:model="clr-namespace:ChatBot.Models">
-            <ObjectDataProvider.ConstructorParameters>
-                <model:ChatDiscussion></model:ChatDiscussion>
-            </ObjectDataProvider.ConstructorParameters>
-        </ObjectDataProvider>
-        <vm:ChatDiscussionViewModel></vm:ChatDiscussionViewModel>
-    </UserControl.DataContext>-->
     <UserControl.Resources>
         <vm:ChatDiscussionViewModel x:Key="DesignViewModel"/>
     </UserControl.Resources>
@@ -58,44 +49,4 @@
 
             </Path>
         </Grid>
-    <!--<Grid Visibility="Visible" VerticalAlignment="Bottom" HorizontalAlignment="Left" d:DataContext="{Binding Source={StaticResource DesignViewModel}}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-
-         Speech bubble rectangle 
-        <Border CornerRadius="10"
-                    Padding="12"
-                    Margin="5 0 0 0"
-                    Background="White" Width="200">
-
-            <Border.Effect>
-                <DropShadowEffect BlurRadius="4" ShadowDepth="2" Color="Gray" />
-            </Border.Effect>
-            <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-                <TextBlock Text="I am Indian I am Indi" FontFamily="Segoe UI" TextWrapping="Wrap" FontSize="15" FontWeight="Normal" Foreground="#FF005C85"></TextBlock>
-                <TextBlock Text="24/8/2018 9:45PM" Background="Transparent" FontSize="10" Foreground="Black" TextWrapping="Wrap" FontStyle="Italic"></TextBlock>
-            </StackPanel>
-        </Border>
-
-         Chat bubble anchor 
-        <Path Grid.Row="1" 
-              Stroke="Black"
-              Panel.ZIndex="1"
-              Margin="15 -1 15 5"
-              Data="M 0,0 L 10,10 L 20,0 L 0,0" 
-              StrokeThickness="0" 
-                  VerticalAlignment="Bottom" HorizontalAlignment="Left"
-                    Fill="White">
-
-            HorizontalAlignment="{Binding Alignment, Converter={local:HorizontalAlignmentConverter}}"
-             Fill="{Binding BubbleBackground, Converter={local:StringRGBToBrushConverter}}"> 
-
-            <Path.Effect>
-                <DropShadowEffect BlurRadius="3" ShadowDepth="2" Color="Gray" />
-            </Path.Effect>
-
-        </Path>
-    </Grid>-->
 </UserControl>
